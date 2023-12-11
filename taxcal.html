@@ -51,7 +51,7 @@
         tem = 0;
 
         tax = document.getElementById("intax").value*1;
-        neym = document.getElementById("name").value;
+        neym = document.getElementById("name_1").value;
 
         document.getElementById("nem").innerHTML = "Hello, " + neym + "! Your income tax is...";
  
@@ -81,12 +81,12 @@
     });
 
     document.getElementById("new").addEventListener("click", ()=>{
-        document.getElementById("name").value = '';
+        document.getElementById("name_1").value = '';
         document.getElementById("intax").value = '';
     });
 
     document.getElementById("clear").addEventListener("click", ()=>{
-        document.getElementById("name").value = '';
+        document.getElementById("name_1").value = '';
         document.getElementById("intax").value = '';
         document.getElementById("nem").innerHTML = '';
         document.getElementById("result_i").value = '';
